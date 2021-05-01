@@ -1,15 +1,11 @@
 import React from "react";
+import Todo from "./components/Todo"; //.js extension is omitted
 
 function App() {
   return (
     <div>
       <h1>My Todos</h1>
-      <div className='card'> {/*this is className since this is a javascript object (JSX), NOT html*/}
-        <h2 >My title</h2>
-        <div className='actions'>
-          <button className='btn'>Delete</button>
-        </div>
-      </div>
+      <Todo />
     </div>
   );
 }
