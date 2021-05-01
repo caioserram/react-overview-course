@@ -1,9 +1,10 @@
 // name of the function should start with a capital character to differentiate from vanilla html tags
-function Todo() {
+function Todo(props) {
   return (
     <div className="card">
+      {/*we use {} to specify that it is a dynamic code, not plain html (JSX)*/}
+      <h2>{props.text}</h2>
       {/*class attribute name is className since this is a javascript object (JSX), NOT html*/}
-      <h2>My title</h2>
       <div className="actions">
         <button className="btn">Delete</button>
       </div>
