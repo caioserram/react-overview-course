@@ -15,6 +15,14 @@ function Todo(props) {
     setModalIsOpen(true);
   }
 
+  function cancelHandler(){
+      setModalIsOpen(false)
+  }
+
+  function confirmHandler(){
+    setModalIsOpen(false)
+}
+
   return (
     <div className="card">
       {/* We use {} to specify that it is a dynamic code, not plain html (JSX)*/}
@@ -28,8 +36,8 @@ function Todo(props) {
           Delete
         </button>
         {/* this is the same as modalIsOpen ? <Modal /> : null */}
-        {modalIsOpen && <Modal />}
-        {modalIsOpen && <Backdrop />}
+        {modalIsOpen && <Modal onCancel={cancelHandler} onConfirm={confirmHandler}/>}
+        {modalIsOpen && <Backdrop onCancel={cancelHandler}/>}
       </div>
     </div>
   );
