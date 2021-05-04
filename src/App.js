@@ -1,8 +1,13 @@
 import React from "react"
+import {Route} from 'react-router-dom'
 
 function App() {
   return (
-    <div>Hello World React!</div>
+    <div>
+      <Route path='/'>
+        
+      </Route>
+    </div>
   );
 }
 
