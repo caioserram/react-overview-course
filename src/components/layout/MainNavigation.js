@@ -1,4 +1,6 @@
 import {Link} from "react-router-dom";
+/* If you choose a module.css as styling, you can import it as a json object an use it
+as it is used below */
 import classes from "./MainNavigation.module.css"
 
 export default function MainNavigation() {
